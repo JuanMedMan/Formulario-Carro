@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Idat </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Formulario 1-->
+    <div class="form-container">
+        <h1>Información Personal</h1>
+        <form>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            <br>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+            <br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" placeholder="Ingresa tu edad" required>
+            <br>
+
+            <p>Género:</p>
+            <label>
+                <input type="radio" name="genero" value="M" required> M
+            </label>
+            <label>
+                <input type="radio" name="genero" value="F"> F
+            </label>
+            <label>
+                <input type="radio" name="genero" value="NA"> N.A
+            </label>
+            <br>
+
+            <label for="dni">DNI:</label>
+            <input type="number" id="dni" name="dni" placeholder="Ingresa tu DNI" required>
+            <br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+            <br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!--Formulario 2-->
+    <div class="form-container">
+        <h1>Información del Vehículo</h1>
+        <form>
+            <p>Tipo de Transmisión:</p>
+            <label>
+                <input type="radio" name="transmision" value="automatico" required> Automático
+            </label>
+            <label>
+                <input type="radio" name="transmision" value="mecanico"> Mecánico
+            </label>
+            <br>
+
+            <p>Características:</p>
+            <label>
+                <input type="checkbox" name="caracteristicas" value="aire_acondicionado"> Aire Acondicionado
+            </label>
+            <label>
+                <input type="checkbox" name="caracteristicas" value="asientos_cuero"> Asientos de Cuero
+            </label>
+            <label>
+                <input type="checkbox" name="caracteristicas" value="glp"> GLP
+            </label>
+            <br>
+
+            <label for="color">Color:</label>
+            <select id="color" name="color" required>
+                <option value="" disabled selected>Selecciona un color</option>
+                <option value="blanco_perlado">Blanco Perlado</option>
+                <option value="negro">Negro</option>
+                <option value="azul">Azul</option>
+                <option value="plata">Plata</option>
+            </select>
+            <br>
+
+            <label for="departamento">Departamento:</label>
+            <select id="departamento" name="departamento" required>
+                <option value="" disabled selected>Selecciona un departamento</option>
+                <option value="ancash">Ancash</option>
+                <option value="la_libertad">La Libertad</option>
+                <option value="lima">Lima</option>
+                <option value="cusco">Cusco</option>
+            </select>
+            <br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
